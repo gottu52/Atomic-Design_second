@@ -1,15 +1,15 @@
-import { PrimaryButton } from "./components/attoms/buttons/PrimaryButton";
-import { SecondaryButton } from "./components/attoms/buttons/SecondaryButton";
-import { SearchInput } from "./components/molecules/SearchInput";
 import "./styles.css";
+import { Router } from "./components/router/Router";
+
+const user = {
+  image: "https://source.unsplash.com/NE0XGVKTmcA",
+  name: "まふゆ",
+  mail: "******@mail",
+  tel: "000-000-0000",
+  company: "damy-company",
+  web: "あああ.com"
+};
 
 export default function App() {
-  return (
-    <div className="App">
-      <PrimaryButton>sample</PrimaryButton>
-      <SecondaryButton>sample</SecondaryButton>
-      <br />
-      <SearchInput />
-    </div>
-  );
+  return <Router />;
 }
