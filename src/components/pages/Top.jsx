@@ -7,6 +7,7 @@ import { SecondaryButton } from "../attoms/buttons/SecondaryButton";
 export const Top = () => {
   const history = useHistory();
   const { setUserInfo } = useContext(UserContext);
+
   const onClickAdmin = () => {
     setUserInfo({ isAdmin: true });
     history.push("/users");
@@ -16,6 +17,7 @@ export const Top = () => {
     setUserInfo({ isAdmin: false });
     history.push("/users");
   };
+
   return (
     <SContainer>
       <h2>TOPページ</h2>
